@@ -1,0 +1,61 @@
+#  Dependencies are megablast, diamond and clustalo.
+
+1.  perl SCRIPT.ROYETAL.MOSTANALYSES.PL DinoTree
+This creates the following output files:
+DinoTree.malin	 	   Input for malin (for Fig1a)
+DinoTree.pamlin	       	   Input for paml (for Fig1a)
+*.CutterByPhylodist	   Introns with evidence for creation by TE with a 4nt TSD
+			   First column is phylogenetic distribution (Figure Fig1b) [1]
+*IntronersByGroup	   Clusters of introners for each species, for Fig1c and Fig2a+c, and
+*DonorByPhylodist	   5' splice sites for each species, separated by phylogenetic distribution,
+			   as in *CutterByPhylodist, above (Fig1d)
+*DonorByGroup		   Same as DonorByPhase, but separated by introner group
+*ExpObsPhase		   Results of analysis using flanking exonic nucleotides to predict
+			   phases for each group of P.glacialis introns, for Figure 2b.
+
+2.  perl SCRIPT.ROYETAL.CONVERSIONS.PL
+Uses SymbC1-SymbF.sharedintrons, SymbC1.intronsflanks and SymbF.intronsflanks, from
+output of SCRIPT.ROYETAL.MOSTANALYSES.PL, to identify boundary conversions (GA->GC, etc.),
+and creates SymbC1-SymbF.ObservedConversions, with observed conversions (Fig 1e).
+
+
+3.  Copy Polarella_glacialis_CCMP1383.IntronersByGroup to Polarella_glacialis_CCMP1383.IntronersByGroup.TrainingSet
+and edit the copied file to indicate the boundaries of the TEs (defined as the boundaries of the region of
+sequence similarity across different copies of the same Introner family).  Example is given in
+Polarella_glacialis_CCMP1383.IntronersByGroup.TrainingSet.
+
+4.  perl SCRIPT.ROYETAL.CALLBOUNDARIES.PL Polarella_glacialis_CCMP1383.IntronersByGroup.TrainingSet >
+    Polarella_glacialis_CCMP1383.IntronersByGroup.BoundariesCalled
+* Note that no boundaries will be called for any group that you do not provide a training set for.
+
+5.  perl SCRIPT.ROYETAL.PHASEBYRECRUITEDNUCS.PL Polarella_glacialis_CCMP1383.IntronersByGroup.BoundariesCalled > PhaseBias.BySsNucs
+This gives the output showing that introner classes or subclasses that recruit more splice site nucleotides from
+the TSD have a stronger phase bias.
+
+
+
+
+
+
+
+
+[1] Phylogenetic distributions indications work as follows:
+2-3 indicates that the intron is inferred by parsimony to have been gained no earlier
+than the branch leading to node 3 and no later than the branch leading to node 2.
+Nodes are: 1=SymbC+SymbF, 2=Node1+SymbC, 3=Node2+SmybB, 4=Node3+P.glacialis.
+0 indicates the species itself (i.e., a species-specific intron).
+(So, 1=CF,2=BCF,3=ABCF,4=PABCF)
+Ambiguities arise from missing data (e.g., of an orthologous region is not known for
+the species(s) diverging at that node.
+
+
+
+-rw-r--r-- 1 roylab roylab       1193 Jul 27 14:40 SCRIPT.ROYETAL.CONVERSIONS.PL~
+-rw-r--r-- 1 roylab roylab       1184 Jul 27 14:41 SCRIPT.ROYETAL.CONVERSIONS.PL
+-rw-r--r-- 1 roylab roylab          0 Jul 27 14:41 SymbC1-SymbF.sharedintrons.flanks
+-rw-r--r-- 1 roylab roylab          0 Jul 27 14:41 SymbC1-SymbF.ObservedConversions
+-rw-r--r-- 1 roylab roylab    2723752 Jul 27 14:41 Polarella_glacialis_CCMP1383.IntronersByGroup.BoundariesCalled
+-rw-r--r-- 1 roylab roylab       1485 Jul 27 14:41 comparisonset
+-rw-r--r-- 1 roylab roylab        313 Jul 27 14:41 temp.dnd
+-rw-r--r-- 1 roylab roylab       2231 Jul 27 14:41 temp.gde
+-rw-r--r-- 1 roylab roylab       1651 Jul 27 14:41 temp
