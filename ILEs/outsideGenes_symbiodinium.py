@@ -1,9 +1,17 @@
 from sequenceAnalyzer import FastAreader
-
-
 from pathlib import Path
 import os
 import glob
+
+"""
+Required input:
+A file with a list of prefixes for each considered genome (one line per prefix). 
+
+For each genome:
+1. A genomic annotation file with the name '{Prefix}.gff' 
+2. Output from "blastBack_symbiodinium.py"
+all contained within a directory named with the given {Prefix}.
+"""
 
 
 
