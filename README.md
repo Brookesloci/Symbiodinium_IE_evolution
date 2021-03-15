@@ -11,3 +11,6 @@ This repository harbors data and documented scripts corresponding to the analyse
 The folder, `intron_models`, contains the alignment files and phylogenetic tree file to reproduce the ancestral intron reconstruction in the paper using the graphical user interface in [Malin](http://www.iro.umontreal.ca/~csuros/introns/malin/) along with results from the analyses.
 
 
+### Introner element families
+
+The folder, `intron_models`, contains fasta files of sequences for each ILE family in each considered species. The 
