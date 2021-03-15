@@ -17,4 +17,4 @@ The folder, `ILEs`, contains fasta files of sequences for each ILE family initia
 
 #### ILE data for species
 
-Files ccontaining initially identified ILEs and ILE candidates from intergenic regions for each species are contained within a corresponding tar ball. For example, Symbiodinium A data is contained within `ILEs/symA.tar.gz`. 
+Files ccontaining initially identified ILEs, ILE candidates from intergenic regions, and ILE consensus sequences for each species are contained within a corresponding tar ball. For example, Symbiodinium A data is contained within `ILEs/symA.tar.gz`. 
