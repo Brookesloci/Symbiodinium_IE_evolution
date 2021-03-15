@@ -1,0 +1,12 @@
+#>some_text_without_spaces:Group+{family number -must be an int} scaffold:+start-stop
+#GGCAGACGCGTCCGTCACAGgcgagaaagttgcctcaacgcatgcattacagctgtcggtcctatgagtgttgaagaagctgagGCAGCGAGCGTTTGTCGGAG
+>Smic3122_mrna.17:20-64-20:ph1:3?-4?:0-4:Group+218 LSRX01000036.1:+559386-559449
+GGCAGACGCGTCCGTCACAGgcgagaaagttgcctcaacgcatgcattacagctgtcggtcctatgagtgttgaagaagctgagGCAGCGAGCGTTTGTCGGAG
+>Smic23955_mrna.19:20-64-20:ph0:3?-4?:0-4:Group+218 LSRX01000559.1:-339001-339064
+AGCAACGGCGAGTCCGTAAGgcgaggaagttgcatcagcgcatgtagcacacctgtcggtcctatgagtgttgaagaagctgagGCGAGGCAAGCAGCGAAGCG
+>some_text_without_spaces:Group+218 LSRX01000036.1:+559386-559449
+GGCAGACGCGTCCGTCACAGgcgagaaagttgcctcaacgcatgcattacagctgtcggtcctatgagtgttgaagaagctgagGCAGCGAGCGTTTGTCGGAG
+>Smic914_mrna.9:20-115-20:ph1:3?-4?:0-4:Group-17 LSRX01000009.1:+1209701-1209815
+CGCTGTGAAAGAGCAGCTCTgtgactgggctcttgttagaggatttaatttaaattaccataataaggaaaccatattatttactatagatctctattatggtaacttaaattaaatcctttaacaagaacccagGTGAGATACAGCATGTGCAC
+>Smic1136_mrna.4:20-115-20:ph0:3?-4?:0-4:Group-17 LSRX01000012.1:+257696-257810
+CCTCCGATCGGGTTCCGACGgaacctgggttcttgttaagggatttagtttaagttaccataataaggaaaccatgttattaactatagatccctattatggtaacttaaattaaatcccttaacaagaacccagGAACGAGAGCGATACACGGA
