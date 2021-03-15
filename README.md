@@ -13,4 +13,5 @@ The folder, `intron_models`, contains the alignment files and phylogenetic tree 
 
 ### Introner element families
 
-The folder, `intron_models`, contains fasta files of sequences for each ILE family in each considered species. The 
+The folder, `ILEs`, contains fasta files of sequences for each ILE family in each considered species, and scripts used to identify them. The folder also includes a script to construct consensus sequences for ILEs, along with consensus sequences for each ILE family and candidate ILE sequences found in intergenic regions.
+
