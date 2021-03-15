@@ -14,6 +14,11 @@ This script generates a multiple sequence alignment of all sequences for each IL
 then uses a positional frequency matrix to construct a consensus sequence for each family
 and blasts the consensus back to its corresponding reference.
 
+Dependencies:
+Please have MAFFT and blastn installed in your current PATH
+
+
+
 Required input:
 
 A file with a list of prefixes for each considered genome (one line per prefix). 
