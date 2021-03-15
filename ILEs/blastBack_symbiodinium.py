@@ -1,15 +1,3 @@
-import os
-from sequenceAnalyzer import FastAreader
-import glob
-
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul 16 16:18:19 2019
-
-@author: lgozasht
-"""
 
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -20,11 +8,29 @@ Created on Tue Jul  9 09:40:21 2019
 """
 
 
-"""
-Run Scott's software
+""" 
+
+This script generates a multiple sequence alignment of all sequences for each ILE family using MAFFT, 
+then uses a positional frequency matrix to construct a consensus sequence for each family
+and blasts the consensus back to its corresponding reference.
+
+Required input:
+
+A file with a list of prefixes for each considered genome (one line per prefix). 
+
+For each genome:
+1. A genomic fasta file with the name '{Prefix}.fna' 
+2. A genomic annotation file with the name '{Prefix}.gff' 
+3. A file containing ILEs the name '{Prefix}.Pass.withcoords' and with the header format provided in the .Pass.withcoords example
+all contained within a directory named with the given {Prefix}.
 
 """
+
+
+
 import os
+from sequenceAnalyzer import FastAreader
+import glob
 from pathlib import Path
 
 
