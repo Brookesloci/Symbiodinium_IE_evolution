@@ -11,6 +11,6 @@ This repository harbors data and documented scripts corresponding to the analyse
 The folder, `intron_models`, contains the alignment files and phylogenetic tree file to reproduce the ancestral intron reconstruction in the paper using the graphical user interface in [Malin](http://www.iro.umontreal.ca/~csuros/introns/malin/) along with results from the analyses.
 
 
-### Introner element families
+### Identifying and analyzing introner families
 
 The folder, `ILEs`, contains fasta files of sequences for each ILE family initially identified in each considered species, along with consensus sequences for each ILE family and candidate ILE sequences found in intergenic regions. The folder also contains the custom perl scripts used to initially identify ILEs from annotated genomes and identify phase bias with regard to new insertions. Furthermore, we provide as series of python scripts used to construct consensus sequences for ILE families and retrieve candidate insertions in intergenic regions. 
