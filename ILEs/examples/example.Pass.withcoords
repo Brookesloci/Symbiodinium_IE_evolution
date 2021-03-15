@@ -1,5 +1,6 @@
-#>some_text_without_spaces:Group+{family number -must be an int} scaffold:+start-stop
-#GGCAGACGCGTCCGTCACAGgcgagaaagttgcctcaacgcatgcattacagctgtcggtcctatgagtgttgaagaagctgagGCAGCGAGCGTTTGTCGGAG
+######Fasta with this kind of header format followed by 4 examples from symbA
+######>some_text_without_spaces:Group+{family number -must be an int} scaffold:+start-stop
+######GGCAGACGCGTCCGTCACAGgcgagaaagttgcctcaacgcatgcattacagctgtcggtcctatgagtgttgaagaagctgagGCAGCGAGCGTTTGTCGGAG
 >Smic3122_mrna.17:20-64-20:ph1:3?-4?:0-4:Group+218 LSRX01000036.1:+559386-559449
 GGCAGACGCGTCCGTCACAGgcgagaaagttgcctcaacgcatgcattacagctgtcggtcctatgagtgttgaagaagctgagGCAGCGAGCGTTTGTCGGAG
 >Smic23955_mrna.19:20-64-20:ph0:3?-4?:0-4:Group+218 LSRX01000559.1:-339001-339064
