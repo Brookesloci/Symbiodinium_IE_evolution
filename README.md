@@ -14,7 +14,3 @@ The folder, `intron_models`, contains the alignment files and phylogenetic tree 
 ### Identifying and analyzing introner families
 
 The folder, `ILEs`, contains fasta files of sequences for each ILE family initially identified in each considered species, along with consensus sequences for each ILE family and candidate ILE sequences found in intergenic regions. The folder also contains the custom perl scripts used to initially identify ILEs from annotated genomes and identify phase bias with regard to new insertions. Furthermore, we provide as series of python scripts used to construct consensus sequences for ILE families and retrieve candidate insertions in intergenic regions. 
-
-#### ILE data for species
-
-Files ccontaining initially identified ILEs, ILE candidates from intergenic regions, and ILE consensus sequences for each species are contained within a corresponding tar ball. For example, Symbiodinium A data is contained within `ILEs/symA.tar.gz`. 
