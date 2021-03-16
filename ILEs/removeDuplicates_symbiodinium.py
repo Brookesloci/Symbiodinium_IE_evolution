@@ -1,8 +1,25 @@
+
+"""
+This script removes duplicate blast hits from candidate ILE insertions outside genes.
+
+
+Required input:
+A file with a list of prefixes for each considered genome (one line per prefix). 
+For each genome:
+1. Output from "outsideGenes_symbiodinium.py"
+all contained within a directory named with the given {Prefix}.
+"""
+
+
+
 outDic = {}
 inDic = {}
 from pathlib import Path
 from sequenceAnalyzer import FastAreader
 import os
+
+
+
 with open('test','r') as f:
     for line in f:
         removeList = []
